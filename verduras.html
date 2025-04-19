@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ecomarket</title>
+<link rel="stylesheet" href="estilo3.css" />
+</head>
+<body>
+<div>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="acerca.html">Acerca de Nosotros</a></li>
+    <li>
+        <a>Productos</a>
+        <ul>
+        <li><a href="verduras.html">Verduras</a></li>
+        <li><a href="frutas.html">Frutas</a></li>
+        <li><a href="granos.html">Granos y Legumbres</a></li>
+        </ul>
+    </li>
+    <li><a href="formulario.html">Contáctanos</a></li>
+    </ul>
+</div>
+
+<div class="fondo1"></div>
+
+<h1 align="center">Sección de verduras</h1>
+
+<table border="1" style="margin:0 auto;">
+    <tr>
+    <th>Tomate</th>
+    <th>Zanahoria</th>
+    <th>Papa</th>
+    </tr>
+    <tr>
+    <td>
+        <p> precio por kg:/$5</p>
+        <img src="tomate.jpg" width="200" height="200" alt="Tomate">
+        <p>Cantidad: <input type="number" id="cantidad_tomate" min="0" placeholder="ingrese cantidad" onchange="calcularTotal()"></p>
+        <p>Subtotal: $<span id="subtotal_tomate">0.00</span></p>
+    </td>
+    <td>
+        <p>precio por kg:/$3</p>
+        <img src="zanahoria.jpg" width="200" height="200" alt="Zanahoria">
+        <p>Cantidad: <input type="number" id="cantidad_zanahoria" min="0" placeholder="ingrese cantidad" onchange="calcularTotal()"></p>
+        <p>Subtotal: $<span id="subtotal_zanahoria">0.00</span></p>
+    </td>
+    <td>
+        <p>precio por kg:/$4</p>
+        <img src="papas.jpg" width="200" height="200" alt="Papa">
+        <p>Cantidad: <input type="number" id="cantidad_papa" min="0" placeholder="ingrese cantidad" onchange="calcularTotal()"></p>
+        <p>Subtotal: $<span id="subtotal_papa">0.00</span></p>
+    </td>
+    </tr>
+    <tr>
+    <th>Pepino</th>
+    <th>Cebolla</th>
+    <th>Coliflor</th>
+    </tr>
+    <tr>
+    <td>
+        <p>precio por kg:/$2</p>
+        <img src="pepino.jpg" width="200" height="200" alt="Pepino">
+        <p>Cantidad: <input type="number" id="cantidad_pepino" min="0" placeholder="ingrese cantidad" onchange="calcularTotal()"></p>
+        <p>Subtotal: $<span id="subtotal_pepino">0.00</span></p>
+    </td>
+    <td>
+        <p>precio por kg:/$3</p>
+        <img src="cebolla.jpg" width="200" height="200" alt="Cebolla">
+        <p>Cantidad: <input type="number" id="cantidad_cebolla" min="0" placeholder="ingrese cantidad" onchange="calcularTotal()"></p>
+        <p>Subtotal: $<span id="subtotal_cebolla">0.00</span></p>
+    </td>
+    <td>
+        <p>precio por kg:/$6</p>
+        <img src="coliflor.jpg" width="200" height="200" alt="Coliflor">
+        <p>Cantidad: <input type="number" id="cantidad_coliflor" min="0" placeholder="ingrese cantidad" onchange="calcularTotal()"></p>
+        <p>Subtotal: $<span id="subtotal_coliflor">0.00</span></p>
+    </td>
+    </tr>
+</table>
+
+<h1 align="center">Total de la compra: $<span id="total">0.00</span></h1>
+
+<div align="center" >
+    <button onclick="calcularTotal()">Comprar</button>
+    <button onclick="limpiarCarrito()">Limpiar</button>
+</div>
+<script src="inicio.js"></script>
+</body>
+</html>
